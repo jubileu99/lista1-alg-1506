@@ -6,11 +6,11 @@
     |  Data :  09/06/2018            |
 */
 
-#define t 5
+#define t 6
 
 int main(){
 
-    int k[t] = {8,7,9,8,4},
+    int k[t] = {8,7,9,8,4,6},
     aux;
 
     for (int i = 0; i < t; i++)
@@ -18,12 +18,16 @@ int main(){
 
     for (int i = 0; i < t; i = i+2){
         if (i % 2 == 0){
-            if (k[i + 1] % 2 != 0){
-                aux = k[i];
-                k[i] = k[i + 1];
-            }
+            aux = k[i];
+            k[i] = k[i+1];
+            k[i+1] = aux;  
         }
     }
+
+    printf("\n");
+
+    for (int i = 0; i < t; i++)
+        printf("%i ",k[i]);
 
     return 0;
 }
