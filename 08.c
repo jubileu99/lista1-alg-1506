@@ -10,8 +10,10 @@
 
 int main(){
 
-    int vetor[tam] = {1,2,1,4,10,6,7,8,9,10};
-    
+    int vetor[tam];
+
+    for (int i = 0; i < tam ; i++){ scanf("%i", &vetor[i]); }
+
     for(int i = 0; i < tam; i++){
         for(int x = i+1; x < tam; x++){
             if(vetor[i] == vetor[x]){

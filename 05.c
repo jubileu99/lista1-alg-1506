@@ -6,12 +6,18 @@
     |  Data :  09/06/2018            |
 */
 
-#define t 6
+#define t 20
 
 int main(){
 
-    int k[t] = {8,7,9,8,4,6},
+    int k[t],
     aux;
+
+    
+    for(int i = 0; i < t; i++){
+        scanf("%i",&k[i]);
+    }
+    
 
     for (int i = 0; i < t; i++)
         printf("%i ",k[i]);

@@ -11,13 +11,21 @@
 void main(){
 
 
-    int vetor1[tam] = {2,5,7,8,4,5,6,1,6},
-    vetor2[tam] = {0,5,6,4,2,3,6,5,8},
-    vetor3[tam] = {9,5,8,4,21,1,5,12},
+    int vetor1[tam],
+    vetor2[tam],
+    vetor3[tam],
     aux[tam],
     cont=0;
     
-    
+    printf("Informe o primeiro vetor\n");
+    for(int i = 0; i < tam ; i++){ scanf("%i",&vetor1[i]); }
+
+    printf("Informe o segundo vetor\n");
+    for (int i = 0; i < tam; i++){ scanf("%i", &vetor2[i]); }
+
+    printf("Informe o terceiro vetor\n");
+    for (int i = 0; i < tam; i++){ scanf("%i", &vetor3[i]); }
+
     for(size_t i = 0; i < tam; i++){
         if(i < 3){
             aux[i] = vetor1[i];

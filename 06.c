@@ -11,10 +11,15 @@
 int main()
 {
 
-    int vetor[tam] = {1, 3, 4, 6, 8, 9, 11},
+    int vetor[tam],
         aux,
         x;
 
+    for(int i = 0; i < tam; i++)
+    {
+        scanf("%i",&vetor[i]);
+    }
+    
     printf("Informe o valor a ser buscado\n");
     scanf("%i", &x);
 
